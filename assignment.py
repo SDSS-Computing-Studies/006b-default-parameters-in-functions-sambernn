@@ -11,7 +11,7 @@ def factorPair():
 
 def cosineLaw():
 
-def convertAngle():
+def toRadians():
 
 def solution():
 

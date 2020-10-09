@@ -70,7 +70,7 @@ The return value is a sorted list of the 2 factors that multiply to
 make the number
 
 Example Command:
-print( factorPair(10,2) )
+print( assignment.factorPair(10,2) )
 expects:
 [2, 5]
 
@@ -101,9 +101,12 @@ ou will need to create a function called toRadians()
 
 create the function toRadians()
 it will take 1 input value, a float that is the measure of the angle in degrees
-The function will convert the measure from degrees to raidans
+The function will convert the measure from degrees to radians
 
 math.pi radians = 180 degrees
+    # radians        # degrees
+    ----------    = -----------
+       math.pi         180
 
 the return value will be a float value that is the angle measure in radians
 

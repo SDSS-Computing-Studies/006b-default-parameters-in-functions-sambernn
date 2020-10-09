@@ -35,3 +35,5 @@ print( cats.timesTwo(4.3) )
 print( cats.zeroMyHero("green"))
 print( cats.black )
 print( cats.tabby)
+
+print( black)

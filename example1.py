@@ -39,4 +39,4 @@ print(b)
 # note that this function only returns a tuple with a length of 2
 # if we try to store it into 3 variable, we will get an error:
 # uncomment the next line to see what error we get
-#j,k,l = squareAndRoot(3)
+j,k,l = squareAndRoot(3)
