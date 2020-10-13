@@ -26,20 +26,22 @@ def cosineLaw(a,b,c,oppositeSide=True):
         return s
     else:
         # trying to find adjacent side
-        sides = [a,b,c]
-        sides.sort()
-        if a > b:
+        if a < b:
             a1 = 1
-            b1 = 2 * (a) * (math.cos(c))
+            b1 = -2 * (a) * (math.cos(c))
             c1 = (a ** 2)-(b ** 2)
             s = quadratic(a1,b1,c1)
-            return s
-        if b > a:
+            # s= list , the return value from quadratic
+            x = solution(s)
+            # solution changes list to single answer
+            return x
+        if b < a:
             a1 = 1
-            b1 = 2 * (b) * (math.cos(c))
+            b1 = -2 * (b) * (math.cos(c))
             c1 = (b ** 2)-(a ** 2)
             s = quadratic(a1,b1,c1)
-            return s
+            x = solution(s)
+            return x
 
 
 def toRadians(degrees):
@@ -48,6 +50,8 @@ def toRadians(degrees):
     return rad
 
 def solution(quadAnswer):
+    # input: list containing 2 elements
+    # return is larger non-zero single answer
     quadAnswer.sort()
     solanswer = quadAnswer[1]
     return solanswer
